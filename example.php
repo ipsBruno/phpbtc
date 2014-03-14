@@ -12,6 +12,13 @@
           $valuebtc = ValorDisponivel("Bitcoin", $wallet); 
           $valueltc = ValorDisponivel("Litecoin", $wallet); 
           
-          EnviarQuantia("Bitcoin", $wallet, "addresstosend", $valor)
+          echo "BTC Ammount: {$valuebtc}<br/>LTC Ammount: {$valueltc}";
+          
+          $sendaddress = "13Cj69uTLTFwVYTP6HZ9PqXFkBKV84UsRY";
+          $valor = "0.2"; // 0.2 BTC
+          
+          EnviarQuantia("Bitcoin", $wallet, $sendaddress, $valor)
+
+          echo "You sent {$valor} BTC to Address: {$sendaddress}";
 
 ?>
