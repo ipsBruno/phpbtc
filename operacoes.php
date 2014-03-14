@@ -18,7 +18,7 @@
 	}
 
 
-	function EnviarQuantia($moeda, $carteira, $valor) {
+	function EnviarQuantia($moeda, $carteira, $para, $valor) {
 
 		$moeda .= "RPC";
 
@@ -26,7 +26,7 @@
 
 		$conexao = $rpc->conectar();
 
-		return $conexao->sendtoaddress($carteira, (float) $valor);
+		return $conexao->sendfrom($carteira,  $para, (float) $valor);
 
 	}
 
