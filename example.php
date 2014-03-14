@@ -1,8 +1,9 @@
 <?php
 
+          include 'operacoes.php';
 
           $wallet = "ipsBruno"; // label to address
-          
+                    
           $addressbtc = PegarEndereço("Bitcoin", $wallet);
           $addressltc = PegarEndereço("Litecoin", $wallet);
           
