@@ -10,6 +10,6 @@
           $valuebtc = ValorDisponivel("Bitcoin", $wallet); 
           $valueltc = ValorDisponivel("Litecoin", $wallet); 
           
-          EnviarQuantia("Bitcoin", "addresstosend", $valor)
+          EnviarQuantia("Bitcoin", $wallet, "addresstosend", $valor)
 
 ?>
