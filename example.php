@@ -7,6 +7,7 @@
           $addressbtc = PegarEndereço("Bitcoin", $wallet);
           $addressltc = PegarEndereço("Litecoin", $wallet);
           
+          echo "BTC Address: {$addressbtc}<br/>LTC Address: {$addressltc}";
           
           $valuebtc = ValorDisponivel("Bitcoin", $wallet); 
           $valueltc = ValorDisponivel("Litecoin", $wallet); 
